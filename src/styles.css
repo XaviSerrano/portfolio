@@ -4,6 +4,8 @@
   --secondary-text: #94a3b8;
   --light-blue: #38bdf8;
   --light-green: #4ff739;
+  --dark-green: #349b26;
+  /* --dark-green: #4ff73998; */
 }
 
 
@@ -16,6 +18,17 @@
 html, body, button {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
+
+button {
+  background-color: var(--light-green);
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 
 a {
   text-decoration: none;

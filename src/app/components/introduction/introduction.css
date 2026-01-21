@@ -1,0 +1,45 @@
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  color: var(--light-green);
+}
+
+.dark {
+  color: var(--dark-green);
+}
+
+p {
+  color: var(--secondary-text);
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-block: 1.6rem;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.6rem 2rem;
+}
+
+.copy {
+  background-color: var(--secondary-text);
+}
