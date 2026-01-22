@@ -2,6 +2,7 @@
   --primary-background: #0f172a;
   --primary-text: #e5e7eb;
   --secondary-text: #94a3b8;
+  --secondary-text-hover: #6990c0;
   --light-blue: #38bdf8;
   --light-green: #4ff739;
   --dark-green: #349b26;
@@ -20,13 +21,20 @@ html, body, button {
 }
 
 button {
-  background-color: var(--light-green);
+  background-color: var(--dark-green);
+  color: var(--primary-text);
   font-weight: bold;
   border-radius: 4px;
   padding: 10px;
   outline: none;
   border: none;
   cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  color: var(--primary-background);
+  background-color: var(--light-green);
 }
 
 

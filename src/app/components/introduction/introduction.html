@@ -7,16 +7,18 @@
     <p>Construyo aplicaciones para solucionar problemas existentes o emergentes.</p>
 
     <div class="links">
-      <button>CV</button>
+      <button type="button" (click)="openCV()">CV</button>
       
       <div class="email">
         <p>xserrano2001@gmail.com</p>
-        <button class="copy">Copy</button>
+        <button type="button" (click)="copyEmail()">
+          <fa-icon [icon]="copied ? faCheck : faCopy"></fa-icon>
+        </button>
       </div>
     </div>
   </article>
 
   <article class="right-section">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="Chibi profile pic">
+    <img src="/assets/images/xavi.png" alt="Xavi profile pic">
   </article>
 </section>
