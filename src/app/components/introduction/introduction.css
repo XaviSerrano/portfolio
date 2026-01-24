@@ -54,7 +54,7 @@ p {
   font-size: 14px;
   padding: 0 1rem;
   margin: 0;
-  color: var(--secondary-text);
+  color: var(--primary-background);
 }
 
 /* Botón copy */

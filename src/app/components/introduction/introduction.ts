@@ -13,14 +13,17 @@ export class Introduction {
   copied = false;
   email = "xserrano2001@gmail.com";
 
-copyEmail() {
-  navigator.clipboard.writeText(this.email);
-  this.copied = true;
-  setTimeout(() => this.copied = false, 2000);
-}
+  copyEmail() {
+    navigator.clipboard.writeText(this.email);
+    this.copied = true;
+    console.log(this.copied)
+    setTimeout(() => {
+    this.copied = false,
+    console.log(this.copied)
+  }
+    , 2000);
+  }
 
-
-  
   openCV() {
     window.open('/assets/docs/XavierSerranoCV.pdf', '_blank');
   }

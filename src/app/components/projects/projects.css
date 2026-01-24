@@ -1,0 +1,109 @@
+h2 {
+  padding-inline: 10rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 600px 600px;
+
+  grid-template-areas:
+    "a b b"
+    "c c d";
+  gap: 1rem;
+  padding: 2rem 10rem;
+}
+
+.a { grid-area: a; }
+.b { grid-area: b; }
+.c { grid-area: c; }
+.d { grid-area: d; }
+
+
+.a {
+  background-image: url('/assets/images/PokeAPI.png');
+}
+
+.b {
+  background-image: url('/assets/images/GameTracker.png');
+}
+
+.c {
+  background-image: url('/assets/images/FilmTracker.png');
+}
+
+.d {
+  background-image: url('/assets/images/calculator.png');
+}
+
+.item {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Gradiente */
+.item .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 1;
+}
+
+.item .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.item h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--dark-green);
+}
+
+.item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+  max-width: 90%;
+}
+
+
+.tech {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tech span {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  color: white;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
