@@ -1,0 +1,81 @@
+.tech {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tech span {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  color: white;
+  font-weight: 500;
+}
+
+
+.skills {
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tech-skills {
+  flex: 1;
+}
+
+.soft-skills {
+  flex: 1.8;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+/* TECHNICAL SKILLS */
+
+.tech-skills p {
+  padding-block: 0.4rem;
+}
+
+.backend {
+  margin-top: 20px;
+}
+
+/* SOFT SKILLS */
+
+.soft-skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.soft-skills-list .item {
+  background: var(--primary-background);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.soft-skills-list .item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.soft-skills-list h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: var(--primary-text);
+}
+
+.soft-skills-list p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--secondary-text);
+  line-height: 1.4;
+}
