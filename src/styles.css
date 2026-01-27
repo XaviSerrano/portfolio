@@ -17,7 +17,7 @@
 }
 
 html, body, button {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI';
 }
 
 button {
@@ -41,4 +41,48 @@ button:hover {
 a {
   text-decoration: none;
   color: var(--primary-text);
+}
+
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  position: relative;
+  margin-bottom: 1.5rem;
+  color: var(--primary-text);
+  font-family: 'Space Grotesk', Inter, sans-serif;;
+}
+
+/* línea inferior degradada */
+h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    var(--light-green),
+    transparent
+  );
+}
+
+
+h4 {
+  font-size: 2rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+h4::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: var(--light-green);
 }

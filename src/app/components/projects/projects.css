@@ -1,5 +1,6 @@
-h2 {
-  padding-inline: 10rem;
+
+.projects {
+  padding: 2rem 6rem;
 }
 
 .grid {
@@ -12,7 +13,6 @@ h2 {
     "a b b"
     "c c d";
   gap: 1rem;
-  padding: 2rem 10rem;
 }
 
 .a { grid-area: a; }
@@ -39,7 +39,7 @@ h2 {
 
 .item {
   position: relative;
-  border-radius: 16px;
+  border-radius: 8px;
   overflow: hidden;
   color: white;
   background-position: center;
@@ -69,12 +69,6 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-}
-
-.item h3 {
-  margin: 0;
-  font-size: 1.6rem;
-  color: var(--dark-green);
 }
 
 .item p {

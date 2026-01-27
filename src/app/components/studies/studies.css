@@ -1,0 +1,84 @@
+.studies {
+  padding: 2rem 6rem;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 3rem;
+  padding-left: 2rem;
+}
+
+/* Línea vertical */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--light-green),
+    transparent
+  );
+}
+
+/* Item */
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Punto */
+.timeline-item .dot {
+  position: absolute;
+  left: -32px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--light-green);
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(79, 247, 57, 0.15);
+}
+
+/* Contenido */
+.timeline-item .content {
+  background: var(--primary-background);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  width: 600px;
+  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-item .content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Título */
+.timeline-item .grade {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.2rem;
+  color: var(--primary-text);
+}
+
+/* Fecha */
+.timeline-item .date {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+  color: var(--secondary-text);
+}
+
+/* Descripción */
+.timeline-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--secondary-text);
+  line-height: 1.4;
+}

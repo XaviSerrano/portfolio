@@ -1,0 +1,22 @@
+.about {
+  padding: 2rem 6rem;
+  max-width: 900px;
+}
+
+.about p {
+  margin-top: 1rem;
+  color: var(--secondary-text);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.about .intro {
+  font-size: 1.1rem;
+  color: var(--primary-text);
+}
+
+.about .closing {
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: var(--secondary-text);
+}

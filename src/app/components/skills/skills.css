@@ -16,7 +16,7 @@
 
 
 .skills {
-  padding: 2rem 10rem;
+  padding: 2rem 6rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -51,7 +51,6 @@ h2 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 1.5rem;
-  margin-top: 2rem;
 }
 
 .soft-skills-list .item {
@@ -67,7 +66,7 @@ h2 {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
-.soft-skills-list h4 {
+.soft-skills-list p:first-child  {
   margin: 0 0 0.5rem 0;
   font-size: 1.1rem;
   color: var(--primary-text);
