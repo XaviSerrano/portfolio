@@ -1,14 +1,27 @@
+/* Base ya existente */
 .studies {
   padding: 2rem 6rem;
 }
 
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.chibi-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .timeline {
   position: relative;
-  margin-top: 3rem;
   padding-left: 2rem;
 }
 
-/* Línea vertical */
 .timeline::before {
   content: "";
   position: absolute;
@@ -24,7 +37,6 @@
   );
 }
 
-/* Item */
 .timeline-item {
   position: relative;
   display: flex;
@@ -32,7 +44,6 @@
   margin-bottom: 3rem;
 }
 
-/* Punto */
 .timeline-item .dot {
   position: absolute;
   left: -32px;
@@ -44,14 +55,13 @@
   box-shadow: 0 0 0 6px rgba(79, 247, 57, 0.15);
 }
 
-/* Contenido */
 .timeline-item .content {
   background: var(--primary-background);
   border-radius: 12px;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   width: 600px;
-  
+  height: 150px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -60,14 +70,12 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
-/* Título */
 .timeline-item .grade {
   margin: 0 0 0.25rem 0;
   font-size: 1.2rem;
   color: var(--primary-text);
 }
 
-/* Fecha */
 .timeline-item .date {
   display: inline-block;
   font-size: 0.8rem;
@@ -75,10 +83,70 @@
   color: var(--secondary-text);
 }
 
-/* Descripción */
 .timeline-item p {
   margin: 0;
   font-size: 0.9rem;
   color: var(--secondary-text);
   line-height: 1.4;
+}
+
+/* ------------------ */
+/* RESPONSIVE */
+/* ------------------ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .studies {
+    padding: 2rem 3rem;
+  }
+
+  section {
+    gap: 30px;
+  }
+
+  .timeline-item .content {
+    width: 450px;
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .chibi-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .timeline {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .timeline-item .dot {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item .content {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
 }

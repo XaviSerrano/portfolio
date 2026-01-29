@@ -2,6 +2,18 @@
   <div class="footer-content">
     <p class="name">© 2026 · Xavi Serrano</p>
 
+
+    <div class="links">
+      <button type="button" (click)="openCV()">CV</button>
+      
+      <div class="email">
+        <p>xserrano2001@gmail.com</p>
+        <button type="button" (click)="copyEmail()">
+          <fa-icon [icon]="copied ? faCheck : faCopy"></fa-icon>
+        </button>
+      </div>
+    </div>
+
     <div class="footer-links">
       <a href="mailto:xserrano2001@gmail.com">Email</a>
       <a href="https://github.com/XaviSerrano" target="_blank">GitHub</a>

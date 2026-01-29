@@ -1,19 +1,23 @@
 <nav>
   <div class="left-section">
-    <img src="" alt="">
     <p>XAVI.DEV</p>
   </div>
 
-  <div class="mid-section">
+  <button class="menu-toggle" (click)="menuOpen = !menuOpen">
+    {{ menuOpen ? '✕' : '☰' }}
+  </button>
+
+
+  <div class="mid-section" [class.open]="menuOpen">
     <ul>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#estudios">Estudios</a></li>
-      <li><a href="#sobremi">Sobre mí</a></li>
+      <li><a href="#proyectos" (click)="menuOpen = false">Proyectos</a></li>
+      <li><a href="#habilidades" (click)="menuOpen = false">Habilidades</a></li>
+      <li><a href="#estudios" (click)="menuOpen = false">Estudios</a></li>
+      <li><a href="#sobremi" (click)="menuOpen = false">Sobre mí</a></li>
     </ul>
   </div>
 
-  <div class="right-section">
+  <div class="right-section desktop-only">
     <button>Contact me</button>
   </div>
 </nav>
