@@ -79,6 +79,7 @@
 }
 
 
+/* Tech pills */
 .tech {
   display: flex;
   gap: 0.5rem;
@@ -93,7 +94,15 @@
   backdrop-filter: blur(6px);
   color: white;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
+
+.tech i {
+  font-size: 1rem;
+}
+
 
 .links {
   display: flex;
@@ -101,6 +110,22 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+.links a fa-icon {
+  font-size: 1rem;
+  color: var(--primary-text);
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.links a:hover fa-icon {
+  transform: scale(1.2);
+  color: var(--light-green);
+}
+
+
 
 
 @media (max-width: 1024px) {

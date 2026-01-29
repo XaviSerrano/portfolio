@@ -5,14 +5,22 @@
 }
 
 .tech span {
-  font-size: 0.7rem;
-  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(6px);
   color: white;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
+
+.tech i {
+  font-size: 1rem;
+}
+
 
 
 .skills {
