@@ -21,7 +21,8 @@
   color: var(--secondary-text);
 }
 
-/* Tablets */
+
+/* RESPONSIVE */
 @media (max-width: 1024px) {
   .about {
     padding: 2rem 3rem;

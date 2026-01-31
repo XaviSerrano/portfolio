@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-
+import { RevealDirective } from '../../shared/reveal';
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [RevealDirective],
   templateUrl: './about.html',
   styleUrl: './about.css',
 })

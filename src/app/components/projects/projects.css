@@ -125,8 +125,7 @@
   color: var(--light-green);
 }
 
-
-
+/* RESPONSIVE */
 
 @media (max-width: 1024px) {
   .projects {

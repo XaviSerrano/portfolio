@@ -15,4 +15,18 @@ import { Footer } from '../components/footer/footer';
 })
 export class Home {
 
+  ngAfterViewInit() {
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        entry.target.classList.toggle('visible', entry.isIntersecting);
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  document.querySelectorAll('.reveal')
+    .forEach(el => observer.observe(el));
+}
+
 }

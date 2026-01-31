@@ -79,9 +79,9 @@
   font-size: 0.9rem;
 }
 
-/* ------------------ */
+
 /* RESPONSIVE FOOTER */
-/* ------------------ */
+
 @media (max-width: 1024px) {
   .footer {
     padding: 2rem 3rem;
