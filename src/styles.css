@@ -9,7 +9,6 @@
   /* --dark-green: #4ff73998; */
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +41,6 @@ a {
   text-decoration: none;
   color: var(--primary-text);
 }
-
 
 h3 {
   font-size: 2.4rem;

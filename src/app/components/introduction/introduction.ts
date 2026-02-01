@@ -2,18 +2,16 @@ import { Component, AfterViewInit, OnDestroy, ElementRef, Inject, PLATFORM_ID } 
 import { isPlatformBrowser } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCopy, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { Buttons } from '../reusable/buttons/buttons';
+import { RevealDirective } from '../../shared/reveal';
 
 @Component({
   selector: 'app-introduction',
   templateUrl: './introduction.html',
   styleUrls: ['./introduction.css'],
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, Buttons, RevealDirective],
 })
 export class Introduction implements AfterViewInit, OnDestroy {
-  faCopy = faCopy;
-  faCheck = faCheck;
-  copied = false;
-  email = 'xserrano2001@gmail.com';
 
   private observer?: IntersectionObserver;
   private isBrowser: boolean;
@@ -22,12 +20,11 @@ export class Introduction implements AfterViewInit, OnDestroy {
     private el: ElementRef,
     @Inject(PLATFORM_ID) platformId: Object
   ) {
-    // Detectamos si estamos en navegador
     this.isBrowser = isPlatformBrowser(platformId);
   }
 
   ngAfterViewInit() {
-    if (!this.isBrowser) return; // No ejecutar en SSR
+    if (!this.isBrowser) return;
 
     this.observer = new IntersectionObserver(
       entries => {
@@ -44,18 +41,7 @@ export class Introduction implements AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.observer?.disconnect(); // Safe si no se creó
+    this.observer?.disconnect();
   }
 
-  copyEmail() {
-    navigator.clipboard.writeText(this.email);
-    this.copied = true;
-    setTimeout(() => {
-      this.copied = false;
-    }, 2000);
-  }
-
-  openCV() {
-    window.open('/assets/docs/XavierSerranoCV.pdf', '_blank');
-  }
 }
