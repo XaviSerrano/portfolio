@@ -9,7 +9,7 @@ import { RevealDirective } from '../../shared/reveal';
   selector: 'app-introduction',
   templateUrl: './introduction.html',
   styleUrls: ['./introduction.css'],
-  imports: [FontAwesomeModule, Buttons, RevealDirective],
+  imports: [FontAwesomeModule, Buttons],
 })
 export class Introduction implements AfterViewInit, OnDestroy {
 

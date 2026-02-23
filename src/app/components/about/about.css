@@ -5,7 +5,7 @@
 
 .about p {
   margin-top: 1rem;
-  color: var(--secondary-text);
+  color: var(--primary-text);
   line-height: 1.6;
   font-size: 1rem;
 }

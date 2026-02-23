@@ -44,3 +44,16 @@
 .email fa-icon {
   font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+  .links {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  .email {
+    justify-content: center;
+  }
+}

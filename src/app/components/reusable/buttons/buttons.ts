@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCopy, faCheck } from '@fortawesome/free-solid-svg-icons';
-import { RevealDirective } from '../../../shared/reveal';
 
 @Component({
   selector: 'app-buttons',
-  imports: [FontAwesomeModule, RevealDirective],
+  imports: [FontAwesomeModule],
   templateUrl: './buttons.html',
   styleUrl: './buttons.css',
 })
