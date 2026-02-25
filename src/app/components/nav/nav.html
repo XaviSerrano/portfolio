@@ -10,10 +10,10 @@
 
   <div class="mid-section" [class.open]="menuOpen">
     <ul>
-      <li><a href="#proyectos" (click)="menuOpen = false">Proyectos</a></li>
-      <li><a href="#habilidades" (click)="menuOpen = false">Habilidades</a></li>
-      <li><a href="#estudios" (click)="menuOpen = false">Estudios</a></li>
-      <li><a href="#sobremi" (click)="menuOpen = false">Sobre mí</a></li>
+      <li><a (click)="scrollTo('proyectos')">Proyectos</a></li>
+      <li><a (click)="scrollTo('habilidades')">Habilidades</a></li>
+      <li><a (click)="scrollTo('estudios')">Estudios</a></li>
+      <li><a (click)="scrollTo('sobremi')">Sobre mí</a></li>
     </ul>
   </div>
 

@@ -9,10 +9,14 @@
   /* --dark-green: #4ff73998; */
 }
 
-* {
+*, html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 html, body, button {

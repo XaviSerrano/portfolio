@@ -8,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class Nav {
   menuOpen = false;
+
+  scrollTo(id: string) {
+  this.menuOpen = false;
+
+  const element = document.getElementById(id);
+
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+}
 }
