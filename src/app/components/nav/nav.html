@@ -1,3 +1,4 @@
+<!-- nav.html -->
 <nav>
   <div class="left-section">
     <p>XAVI.DEV</p>
@@ -7,17 +8,24 @@
     {{ menuOpen ? '✕' : '☰' }}
   </button>
 
-
   <div class="mid-section" [class.open]="menuOpen">
     <ul>
-      <li><a (click)="scrollTo('proyectos')">Proyectos</a></li>
-      <li><a (click)="scrollTo('habilidades')">Habilidades</a></li>
-      <li><a (click)="scrollTo('estudios')">Estudios</a></li>
-      <li><a (click)="scrollTo('sobremi')">Sobre mí</a></li>
+      <li><a (click)="scrollTo('proyectos')">{{ 'NAV.PROJECTS' | translate }}</a></li>
+      <li><a (click)="scrollTo('habilidades')">{{ 'NAV.SKILLS' | translate }}</a></li>
+      <li><a (click)="scrollTo('estudios')">{{ 'NAV.STUDIES' | translate }}</a></li>
+      <li><a (click)="scrollTo('sobremi')">{{ 'NAV.ABOUT' | translate }}</a></li>
+      <li><a href="#contacto">{{ 'NAV.CONTACT' | translate }}</a></li>
+      <li class="lang-item">
+        <app-language-switcher></app-language-switcher>
+      </li>
     </ul>
+
+    <!-- Solo visible en móvil -->
+    <app-language-switcher class="mobile-lang"></app-language-switcher>
   </div>
 
   <div class="right-section desktop-only">
-    <button><a href="#contacto">Contacto</a></button>
+    <!-- <app-language-switcher></app-language-switcher> -->
+    <button><a href="#contacto">{{ 'NAV.CONTACT' | translate }}</a></button>
   </div>
 </nav>

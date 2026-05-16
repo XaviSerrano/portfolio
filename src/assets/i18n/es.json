@@ -1,0 +1,78 @@
+{
+  "NAV": {
+    "PROJECTS": "Proyectos",
+    "SKILLS": "Habilidades",
+    "STUDIES": "Estudios",
+    "ABOUT": "Sobre mí",
+    "CONTACT": "Contacto"
+  },
+  "HERO": {
+    "TITLE": "Xavi Serrano",
+    "SUBTITLE_1": "Desarrollador",
+    "SUBTITLE_2": "Fullstack",
+    "DESC": "Construyo aplicaciones para solucionar problemas existentes o emergentes."
+  },
+  "ABOUT": {
+    "TITLE": "Sobre mí",
+    "P1": "Soy desarrollador <strong>Full Stack</strong> con especial interés en construir aplicaciones limpias, escalables y centradas en el usuario.",
+    "P2": "Disfruto enfrentándome a problemas complejos y transformarlos en soluciones claras a través de código bien estructurado, buenas prácticas y una arquitectura sólida.",
+    "P3": "Me siento cómodo trabajando tanto en <strong>frontend</strong> como en <strong>backend</strong>, colaborando en equipo y adaptándome rápidamente a nuevos retos y tecnologías.",
+    "P4": "Siempre estoy aprendiendo, iterando y buscando mejorar tanto a nivel técnico como personal."
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "A": {
+      "NAME": "Buscador de Pokemons",
+      "DESC": "Página de búsqueda de pokemons por filtros implementando la PokeAPI"
+    },
+    "B": {
+      "NAME": "GameTracker",
+      "DESC": "Plataforma de seguimiento de videojuegos colaborativa"
+    },
+    "C": {
+      "NAME": "Buscador de películas",
+      "DESC": "Plataforma de búsqueda de películas"
+    },
+    "D": {
+      "NAME": "Calculadora",
+      "DESC": "Calculadora para cálculos básicos"
+    }
+  },
+  "SKILLS": {
+    "TECH_TITLE": "Habilidades técnicas",
+    "FRONTEND_LABEL": "FRONTEND STACK",
+    "BACKEND_LABEL": "BACKEND & BBDD",
+    "SOFT_TITLE": "Habilidades Blandas",
+    "SOFT": {
+      "A_TITLE": "Resolución de problemas",
+      "A_DESC": "Afrontar problemas técnicos complejos mediante un enfoque estructurado, analítico y creativo.",
+      "B_TITLE": "Comunicación",
+      "B_DESC": "Comunicar ideas y conceptos técnicos de forma clara tanto a perfiles técnicos como no técnicos.",
+      "C_TITLE": "Compañerismo",
+      "C_DESC": "Acompañar y guiar a compañeros compartiendo conocimientos, dando feedback y fomentando su crecimiento.",
+      "D_TITLE": "Mentalidad ágil",
+      "D_DESC": "Adaptarse rápidamente al cambio, fomentar la mejora continua y trabajar eficazmente en entornos ágiles."
+    }
+  },
+  "STUDIES": {
+    "TITLE": "Estudios",
+    "ITEM_1": {
+      "GRADE": "Master en Desarrollo de Aplicaciones y Sitios Web",
+      "DATE": "2024 – 2026",
+      "DESC": "Formación orientada al desarrollo frontend y backend, bases de datos y buenas prácticas."
+    },
+    "ITEM_2": {
+      "GRADE": "Grado en Administración y Dirección de Empresas",
+      "DATE": "2019 - 2023",
+      "DESC": "Especialización en análisis de mercado."
+    },
+    "ITEM_3": {
+      "GRADE": "Formación Autodidacta",
+      "DATE": "2021 – Actualidad",
+      "DESC": "Aprendizaje continuo a través de documentación oficial, proyectos personales y retos técnicos."
+    }
+  },
+  "FOOTER": {
+    "COPYRIGHT": "© 2026 · Xavi Serrano"
+  }
+}

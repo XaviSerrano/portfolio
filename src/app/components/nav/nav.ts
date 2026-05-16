@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { LanguageSwitcherComponent } from '../../language-switcher/language-switcher';
 
 @Component({
   selector: 'app-nav',
-  imports: [],
+  imports: [
+    TranslateModule,
+    LanguageSwitcherComponent
+  ],
   templateUrl: './nav.html',
   styleUrl: './nav.css',
 })

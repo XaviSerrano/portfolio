@@ -1,0 +1,78 @@
+{
+  "NAV": {
+    "PROJECTS": "Projects",
+    "SKILLS": "Skills",
+    "STUDIES": "Studies",
+    "ABOUT": "About me",
+    "CONTACT": "Contact"
+  },
+  "HERO": {
+    "TITLE": "Xavi Serrano",
+    "SUBTITLE_1": "Full Stack",
+    "SUBTITLE_2": "Developer",
+    "DESC": "I build applications to solve existing and emerging problems."
+  },
+  "ABOUT": {
+    "TITLE": "About me",
+    "P1": "I'm a <strong>Full Stack</strong> developer with a special interest in building clean, scalable, user-centered applications.",
+    "P2": "I enjoy tackling complex problems and turning them into clear solutions through well-structured code, best practices, and solid architecture.",
+    "P3": "I'm comfortable working in both <strong>frontend</strong> and <strong>backend</strong>, collaborating in teams and quickly adapting to new challenges and technologies.",
+    "P4": "I'm always learning, iterating, and looking to grow both technically and personally."
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "A": {
+      "NAME": "Pokémon Search",
+      "DESC": "A Pokémon search page with filters using the PokeAPI"
+    },
+    "B": {
+      "NAME": "GameTracker",
+      "DESC": "A collaborative video game tracking platform"
+    },
+    "C": {
+      "NAME": "Movie Search",
+      "DESC": "A movie search platform"
+    },
+    "D": {
+      "NAME": "Calculator",
+      "DESC": "A calculator for basic operations"
+    }
+  },
+  "SKILLS": {
+    "TECH_TITLE": "Technical Skills",
+    "FRONTEND_LABEL": "FRONTEND STACK",
+    "BACKEND_LABEL": "BACKEND & DB",
+    "SOFT_TITLE": "Soft Skills",
+    "SOFT": {
+      "A_TITLE": "Problem solving",
+      "A_DESC": "Tackling complex technical problems through a structured, analytical and creative approach.",
+      "B_TITLE": "Communication",
+      "B_DESC": "Communicating ideas and technical concepts clearly to both technical and non-technical profiles.",
+      "C_TITLE": "Teamwork",
+      "C_DESC": "Supporting and guiding teammates by sharing knowledge, giving feedback and fostering their growth.",
+      "D_TITLE": "Agile mindset",
+      "D_DESC": "Quickly adapting to change, promoting continuous improvement and working effectively in agile environments."
+    }
+  },
+  "STUDIES": {
+    "TITLE": "Education",
+    "ITEM_1": {
+      "GRADE": "Master's in Web Application Development",
+      "DATE": "2024 – 2026",
+      "DESC": "Training focused on frontend and backend development, databases and best practices."
+    },
+    "ITEM_2": {
+      "GRADE": "Bachelor's in Business Administration",
+      "DATE": "2019 - 2023",
+      "DESC": "Specialization in market analysis."
+    },
+    "ITEM_3": {
+      "GRADE": "Self-taught Learning",
+      "DATE": "2021 – Present",
+      "DESC": "Continuous learning through official documentation, personal projects and technical challenges."
+    }
+  },
+  "FOOTER": {
+    "COPYRIGHT": "© 2026 · Xavi Serrano"
+  }
+}

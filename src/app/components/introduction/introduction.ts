@@ -4,12 +4,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCopy, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { Buttons } from '../reusable/buttons/buttons';
 import { RevealDirective } from '../../shared/reveal';
-
+import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-introduction',
   templateUrl: './introduction.html',
   styleUrls: ['./introduction.css'],
-  imports: [FontAwesomeModule, Buttons],
+  imports: [FontAwesomeModule, Buttons, TranslateModule],
 })
 export class Introduction implements AfterViewInit, OnDestroy {
 
