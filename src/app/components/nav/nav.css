@@ -60,35 +60,36 @@ li:hover::after {
     display: block;
   }
 
-  .mid-section {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: var(--primary-background);
-    border-bottom: 1px solid var(--secondary-text);
-    transform: translateY(-20px) scale(0.7);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.25s ease;
-  }
+nav {
+  flex-wrap: wrap;
+}
 
-  .mid-section.open {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
+.mid-section {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease,
+    margin-top 0.25s ease;
 
-  .mid-section ul {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    font-size: 1.2rem;
-    padding: 1.5rem 0;
-    gap: 1.2rem;
-  }
+  margin-top: 0;
+}
+
+.mid-section.open {
+  max-height: 400px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.mid-section ul {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  gap: 1.2rem;
+}
 
   .right-section.desktop-only {
     display: none;
