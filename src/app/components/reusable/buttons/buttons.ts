@@ -23,6 +23,6 @@ export class Buttons {
   }
 
   openCV() {
-    window.open('/assets/docs/XavierSerranoCV.pdf', '_blank');
+    window.open('/assets/docs/CVXavierSerrano.pdf', '_blank');
   }
 }
