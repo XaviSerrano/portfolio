@@ -3,7 +3,8 @@
   padding: 2rem 6rem;
 }
 
-.grid {
+/* Adding more projects */
+/* .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -13,13 +14,22 @@
     "a b b"
     "c c d";
   gap: 1rem;
+} */
+/* 
+
+.c { grid-area: c; }
+.d { grid-area: d; } */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 600px;
+  grid-template-areas: "a b b";
+  gap: 1rem;
 }
 
 .a { grid-area: a; }
 .b { grid-area: b; }
-.c { grid-area: c; }
-.d { grid-area: d; }
-
 
 .a {
   background-image: url('/assets/images/PokeAPI.png');
