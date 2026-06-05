@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCopy, faCheck } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,6 +15,8 @@ export class Buttons {
   copied = false;
   email = 'xserrano2001@gmail.com';
 
+  constructor(private translate: TranslateService) {}
+
   copyEmail() {
     navigator.clipboard.writeText(this.email);
     this.copied = true;
@@ -23,6 +26,13 @@ export class Buttons {
   }
 
   openCV() {
-    window.open('/assets/docs/CVXavierSerrano.pdf', '_blank');
+    const lang = this.translate.currentLang;
+
+    const cvPath = 
+      lang === 'en' 
+        ? 'assets/docs/CVXavierSerranoEN.pdf'
+        : 'assets/docs/CVXavierSerrano.pdf';
+
+    window.open(cvPath, '_blank');
   }
 }
