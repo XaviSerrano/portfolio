@@ -27,15 +27,15 @@
     },
     "B": {
       "NAME": "GameTracker",
-      "DESC": "A collaborative video game tracking platform"
+      "DESC": "An application to discover games, manage your library and view statistics"
     },
     "C": {
-      "NAME": "Movie Search",
-      "DESC": "A movie search platform"
+      "NAME": "Project Launcher",
+      "DESC": "A terminal launcher for starting and managing development projects"
     },
     "D": {
-      "NAME": "Calculator",
-      "DESC": "A calculator for basic operations"
+      "NAME": "Habit Tracker",
+      "DESC": "An application for creating habits, tracking daily progress and maintaining streaks"
     }
   },
   "SKILLS": {
