@@ -27,11 +27,11 @@
 }
 
 .c {
-  background-image: url('/assets/images/ProjectLauncher.png');
+  background-image: url('/assets/images/project_launcher.png');
 }
 
 .d {
-  background-image: url('/assets/images/HabitTracker.png');
+  background-image: url('/assets/images/habit_tracker.png');
   background-position: top center;
 }
 
