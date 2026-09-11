@@ -27,11 +27,12 @@
 }
 
 .c {
-  background: linear-gradient(135deg, #102a43, #0f766e);
+  background-image: url('/assets/images/ProjectLauncher.png');
 }
 
 .d {
-  background: linear-gradient(135deg, #312e81, #7e22ce);
+  background-image: url('/assets/images/HabitTracker.png');
+  background-position: top center;
 }
 
 .item {
