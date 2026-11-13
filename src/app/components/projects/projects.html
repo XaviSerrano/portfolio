@@ -21,11 +21,27 @@
 
     <div class="item b reveal delay-2" appReveal>
       <div class="overlay"></div>
+      <div class="mac-window full-window" aria-hidden="true">
+        <div class="window-toolbar">
+          <div class="window-controls">
+            <span class="window-control close"></span>
+            <span class="window-control minimize"></span>
+            <span class="window-control maximize"></span>
+          </div>
+          <div class="window-title">GameTracker · Game detail preview</div>
+        </div>
+        <div class="window-content">
+          <img src="/assets/images/GameTracker-screenshot.png" alt="">
+        </div>
+      </div>
       <div class="content">
         <div class="tech">
           <span><i class="devicon-react-original colored"></i> React</span>
-          <span><i class="devicon-fastapi-plain colored"></i> FastAPI</span>
+          <span><i class="devicon-vitejs-plain colored"></i> Vite</span>
           <span><i class="devicon-tailwindcss-original colored"></i> Tailwind CSS</span>
+          <span><i class="devicon-express-original"></i> Express</span>
+          <span><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+          <span>IGDB API</span>
         </div>
         <h4>{{ 'PROJECTS.B.NAME' | translate }}</h4>
         <p>{{ 'PROJECTS.B.DESC' | translate }}</p>
@@ -37,13 +53,26 @@
 
     <div class="item c reveal delay-2" appReveal>
       <div class="overlay"></div>
+      <div class="mac-window full-window" aria-hidden="true">
+        <div class="window-toolbar">
+          <div class="window-controls">
+            <span class="window-control close"></span>
+            <span class="window-control minimize"></span>
+            <span class="window-control maximize"></span>
+          </div>
+          <div class="window-title">Padelweather · Club weather preview</div>
+        </div>
+        <div class="window-content">
+          <img src="/assets/images/Padelweather.png" alt="">
+        </div>
+      </div>
       <div class="content">
         <div class="tech">
           <span><i class="devicon-python-plain colored"></i> Python</span>
-          <span>Textual</span>
+          <span><i class="devicon-react-original colored"></i> React</span>
         </div>
-        <h4>{{ 'PROJECTS.C.NAME' | translate }}</h4>
-        <p>{{ 'PROJECTS.C.DESC' | translate }}</p>
+        <h4>Padelweather</h4>
+        <p>Encuentra el mejor momento para jugar consultando el tiempo en clubes de pádel.</p>
         <div class="links">
           <a href="https://github.com/XaviSerrano/project-launcher" target="_blank" rel="noopener noreferrer" aria-label="Repositorio de Project Launcher"><fa-icon [icon]="faGithub"></fa-icon></a>
         </div>

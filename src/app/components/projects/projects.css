@@ -22,6 +22,7 @@
   background-image: url('/assets/images/PokeAPI.png');
 }
 
+<<<<<<< Updated upstream
 .b {
   background-image: url('/assets/images/GameTracker.png');
 }
@@ -30,9 +31,104 @@
   background-image: url('/assets/images/project_launcher.png');
 }
 
+=======
+>>>>>>> Stashed changes
 .d {
   background-image: url('/assets/images/habit_tracker.png');
   background-position: top center;
+}
+
+.mac-window.full-window {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  border-radius: inherit;
+  transform: none;
+}
+
+.full-window .window-content {
+  min-height: 0;
+  flex: 1;
+  overflow: hidden;
+}
+
+.full-window .window-content img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.mac-window {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  z-index: 0;
+  width: 90%;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  background: #090b10;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+  transform: translateX(-50%);
+}
+
+.window-toolbar {
+  display: flex;
+  height: 36px;
+  align-items: center;
+  gap: 16px;
+  padding: 0 12px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+  background: #0e1016;
+}
+
+.window-controls {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 7px;
+}
+
+.window-control {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.window-control.close {
+  background: #718096;
+}
+
+.window-control.minimize {
+  background: #718096;
+}
+
+.window-control.maximize {
+  background: #d7a348;
+}
+
+.window-title {
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+  padding: 5px 12px;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 7px;
+  color: #7692be;
+  font-size: 0.65rem;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.window-content img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .item {
