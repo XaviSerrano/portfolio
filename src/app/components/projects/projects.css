@@ -6,7 +6,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 420px);
+  grid-template-rows: repeat(2, 500px);
   grid-template-areas:
     "a b b"
     "c c d";
@@ -22,20 +22,12 @@
   background-image: url('/assets/images/PokeAPI.png');
 }
 
-<<<<<<< Updated upstream
 .b {
   background-image: url('/assets/images/GameTracker.png');
 }
 
 .c {
   background-image: url('/assets/images/project_launcher.png');
-}
-
-=======
->>>>>>> Stashed changes
-.d {
-  background-image: url('/assets/images/habit_tracker.png');
-  background-position: top center;
 }
 
 .mac-window.full-window {
@@ -141,6 +133,11 @@
   background-repeat: no-repeat;
 }
 
+.item.d {
+  background-image: url('/assets/images/habit-tracker.png');
+  background-position: top center;
+}
+
 /* Gradiente */
 .item .overlay {
   position: absolute;
@@ -235,7 +232,7 @@
   }
 
   .grid .item {
-    min-height: 420px;
+    min-height: 500px;
   }
 }
 
@@ -254,7 +251,7 @@
   }
 
   .grid .item {
-    min-height: 360px;
+    min-height: 420px;
   }
   
   .item h4 {
